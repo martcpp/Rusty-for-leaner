@@ -6,7 +6,7 @@ struct Student {
     marks: f32,
 }
 // tuple struct
-struct Studentgrades (char,char,char,char,char,char);
+struct Studentgrades (String,char,char,char,char,char);
 
 // unit struct
 struct UnitStruct;
@@ -27,9 +27,9 @@ fn main() {
         marks: 3.8,
     };
 
-    let student1grades = Studentgrades('A','B','C','D','E','F');
-    let student2grades = Studentgrades('A','B','C','D','E','F');
-    
+    let student1grades = Studentgrades("Ag".to_string(),'B','C','D','E','F');
+    let student2grades = Studentgrades("Ah".to_string(),'B','C','D','E','F');
+
     println!("{} who is {} with roll number {} has the fellowing grades {} that make his total make {}", 
     student1.name, student1.age, student1.roll_no, student1grades.0, student1.marks);
 
